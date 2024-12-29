@@ -1,0 +1,117 @@
+@use './mixins.scss' as *;
+@use './overrides.scss';
+@use '@carbon/react/scss/colors';
+@use '@carbon/grid';
+@use '@carbon/layout';
+@use '@carbon/react/scss/spacing' as *;
+@use '@carbon/react/scss/spacing' as *;
+@use '@carbon/react/scss/type' as *;
+@use '@carbon/react/scss/breakpoint' as *;
+@use '@carbon/react/scss/theme' as *;
+
+
+@include grid.flex-grid();
+
+// overriding header tooltip bg color
+// because the navigation is dark themed while the content is white
+// which means the dark theme tooltip bg blends into the white content bg
+/*
+.cds--header__global .cds--popover-content {
+  background-color: colors.$gray-20;
+}
+
+.cds--header__global .cds--popover-caret {
+  background-color: colors.$gray-20;
+}
+*/
+
+/*
+.landing-page{
+  margin-top: layout.$spacing-09;
+  margin-bottom: layout.$spacing-05;
+  margin-left: layout.$spacing-09;
+}
+
+
+
+
+*/
+.landing-page__banner {
+  padding-top: $spacing-10;
+  padding-bottom: $spacing-07 * 2;
+  padding-left: $spacing-12;
+  //width: auto;
+  @include landing-page-background;
+}
+
+
+
+
+.landing-page__illo {
+  max-width: 100%;
+}
+
+.landing-page__heading {
+  @include type-style('productive-heading-05');
+}
+/*
+.landing-page__r2 {
+  margin-top: rem(-40px);
+}
+*/
+.tabs-group-content {
+  padding: $spacing-10 $spacing-06;
+}
+
+.landing-page__subheading {
+  @include type-style('productive-heading-03');
+
+  font-weight: 600;
+}
+
+.landing-page__p {
+  @include type-style('productive-heading-03');
+  margin-top: $spacing-06;
+  margin-bottom: $spacing-08;
+
+  @include breakpoint-between((320px + 1), md) {
+    //max-width: 75%;
+    max-width: 100%;
+  }
+}
+
+.tabs-group {
+  //background-color: $layer-01;
+}
+.landing-page__r3 {
+  padding-top: $spacing-05;
+  padding-bottom: $spacing-09;
+  padding-left: $spacing-12;
+  //width: 99%;
+  //@include landing-page-background1;
+}
+
+.landing-page__label {
+  @include type-style('heading-01');
+}
+.landing-page__banner,
+.landing-page__r2,
+.landing-page__r3 {
+  margin-left: -20px;
+  margin-right: -15px;
+
+  @include breakpoint-down(md) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.landing-page__list {
+  padding-top: $spacing-05;
+  padding-bottom: $spacing-05;
+  padding-left: $spacing-09;
+  //width: 99%;
+  //@include landing-page-background1;
+}
+
+

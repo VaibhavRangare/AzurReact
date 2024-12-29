@@ -1,0 +1,218 @@
+@use './mixins.scss' as *;
+@use './overrides.scss';
+@use '@carbon/react/scss/colors';
+@use '@carbon/grid';
+@use '@carbon/layout';
+@use '@carbon/react/scss/spacing' as *;
+@use '@carbon/react/scss/spacing' as *;
+@use '@carbon/react/scss/type' as *;
+@use '@carbon/react/scss/breakpoint' as *;
+@use '@carbon/react/scss/theme' as *;
+
+
+//@use '@carbon/colors/scss/colors';
+
+@include grid.flex-grid();
+
+
+.portal-default-spacing {
+  //left:$spacing-03;
+  padding-top: $spacing-05;
+  //margin-top: $spacing-01;
+  padding-bottom: $spacing-09;
+  
+  padding-left: $spacing-10;
+  padding-right: $spacing-05;
+  
+  //width: 99%;
+  //height:500px;
+  @include landing-page-background1;
+}
+.portal-top-grid {
+  //top:-60px;
+  padding-top: $spacing-10;
+  //padding-top: 10px;
+  padding-bottom: $spacing-09;
+  padding-left: $spacing-10;
+  padding-right: $spacing-05;
+  //background-color: green;
+  position: relative;
+}
+
+.portal-top-list-grid-column {
+  padding-top: $spacing-01;
+  padding-bottom: $spacing-02;
+  padding-left: $spacing-06;
+  padding-right: $spacing-05;
+  @include landing-page-background;
+  //background-color: green;
+}
+.portal-top-grid-column {
+  //background-color: yellow;
+  //background-color: $layer-02;
+  background-color: white;
+  width:auto;
+  height: auto;
+  //padding: $spacing-09;
+  //align-content: center;
+  //align-self: center;
+  @include landing-page-background;
+}
+
+.portal-sub-grid {
+  left:16px;
+  
+  padding-top: $spacing-05;
+  padding-bottom: $spacing-05;
+  padding-left: $spacing-01;
+  padding-right: $spacing-05;
+  
+  //background-color: $layer-01;
+  background-color: colors.$white-0;
+  //background-color: colors.$blue-20;
+  //padding: $spacing-12;
+  position: relative;
+}
+
+.portal-sub-sub-grid {
+  left:16px;
+  
+  padding-top: $spacing-01;
+  padding-bottom: $spacing-05;
+  padding-left: $spacing-01;
+  padding-right: $spacing-05;
+  
+  //background-color: $layer-01;
+  background-color: $layer-01;
+  //background-color: colors.$blue-20;
+  //padding: $spacing-12;
+  position: relative;
+}
+
+.portal-sub-grid-column {
+  //background-color: yellow;
+  background-color: colors.$gray-10;
+  width:auto;
+  height: auto;
+  //padding: $spacing-09;
+  //align-content: center;
+  //align-self: center;
+}
+
+.portal-sub-grid-column1 {
+  //background-color: yellow;
+  
+  padding-top: $spacing-04;
+  //padding-left: $spacing-01;
+  //left:-30px;
+  //position: relative;
+  
+}
+
+.portal-sub-grid-column2 {
+  //background-color: yellow;
+  
+  //padding-left: $spacing-05;
+  //padding-left: -500px;
+  left:30px;
+  position: relative;
+  
+  
+}
+
+.portal-sub-grid-column2 {
+  //background-color: yellow;
+  
+  padding-left: $spacing-06;
+  position: relative;
+  
+}
+
+.portal-sub-grid-column3 {
+  //background-color: yellow;
+  padding-top: $spacing-04;
+  padding-left: $spacing-05;
+  position: relative;
+  
+}
+
+.portal-sub-grid-column4 {
+  //background-color: yellow;
+  
+  //padding-top: $spacing-04;
+  //padding-left: $spacing-01;
+  left:-50px;
+  position: relative;
+  
+}
+
+.portal-sub-grid-column5 {
+  //background-color: yellow;
+  
+  //padding-top: $spacing-04;
+  //padding-left: $spacing-01;
+  padding-top: $spacing-07;
+  position: relative;
+  
+}
+.portal-sub-grid-column-div {
+  //background-color: red;
+  //width:auto;
+  //height: auto;
+  padding: $spacing-09;
+  //align-content: center;
+  //align-self: center;
+}
+
+.custom-email-id {
+  //color: green;
+  background-color: blue;
+  //@include landing-page-background1;
+}
+
+
+.landing-page__r3 {
+  padding-top: $spacing-05;
+  //margin-top: $spacing-01;
+  padding-bottom: $spacing-05;
+  padding-left: $spacing-12;
+  padding-right: $spacing-10;
+  //width: 100px;;
+  //height:500px;
+  @include landing-page-background1;
+}
+
+span.a {
+  //background-color: red;
+  display: none; /* the default for span */
+}
+span.b {
+  //background-color: red;
+  display: inline-block; /* the default for span */
+}
+
+
+.landing-page__label {
+  @include type-style('heading-01');
+}
+.landing-page__banner,
+.landing-page__r2,
+.landing-page__r3 {
+  margin-left: -20px;
+  margin-right: -15px;
+  
+  @include breakpoint-down(md) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.landing-page__list {
+  padding-top: $spacing-05;
+  padding-bottom: $spacing-05;
+  padding-left: $spacing-09;
+  //width: 99%;
+  @include landing-page-background1;
+}
+
+
